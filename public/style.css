@@ -1,0 +1,21 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background : lightblue;
+    font-size: 2em;
+    
+}
+
+ul {
+    list-style: none
+}
+
+header {
+    height: 100px;
+    background: black;
+    color: wheat;
+    text-align: center;
+    margin: 0;
+}
