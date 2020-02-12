@@ -2,7 +2,7 @@ const express = require('express');
 const app = express()
 const logger = require('morgan')
 const path = require('path')
-const Users = require ('./models/Users.json')
+const users = require ('./models/Users.json')
 
 require('dotenv').config();
 const port = process.env.PORT || 3000;
@@ -18,7 +18,7 @@ app.set('views', path.join(__dirname, 'views'));
 // });
 
 app.get('/users/', (req, res)=>{
-      res.render('main/users', {Users});
+      res.render('main/users', {users});
 });
 
 
